@@ -21,8 +21,12 @@ body {
   }
 
   .logo {
-    width: 50vw;
+    width: 30vw;
     padding-bottom: 30px;
+
+    @include media($desktop) {
+      width: 50vw;
+    }
 
     @include media($mobile) {
       width: 80vw;
