@@ -1,0 +1,58 @@
+body {
+  background: #fff;
+  font-family: Arial;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.signup {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  color: #000;
+  @include outer-container;
+
+  @include media($mobile) {
+    padding: 0 5%;
+  }
+
+  .logo {
+    width: 50vw;
+    padding-bottom: 30px;
+
+    @include media($mobile) {
+      width: 80vw;
+    }
+  }
+
+  p {
+    letter-spacing: 3px;
+    padding-bottom: 15px;
+  }
+}
+
+.form-customers {
+  color: #000;
+
+  #{$all-text-inputs} {
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    width: 400px;
+    margin-bottom: 20px;
+
+    @include placeholder {
+      color: #000;
+      font-family: Arial;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  }
+
+}

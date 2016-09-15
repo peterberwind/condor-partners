@@ -1,0 +1,26 @@
+#{$all-button-inputs},
+button {
+  @include appearance(none);
+  -webkit-font-smoothing: antialiased;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  padding: 1em 1.25em;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 1px solid #000;
+
+  &:hover,
+  &:focus {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    transition: .5s;
+  }
+}
