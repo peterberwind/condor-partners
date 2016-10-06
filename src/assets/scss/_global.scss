@@ -24,6 +24,10 @@ body {
     width: 30vw;
     padding-bottom: 30px;
 
+    path {
+      fill: #fff;
+    }
+
     @include media($desktop) {
       width: 50vw;
     }
@@ -36,6 +40,7 @@ body {
   p {
     letter-spacing: 3px;
     padding-bottom: 15px;
+    width: 60%;
   }
 }
 
